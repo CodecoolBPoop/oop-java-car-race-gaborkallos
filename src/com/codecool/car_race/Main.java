@@ -7,6 +7,7 @@ public class Main {
      * Creates all the vehicles that will be part of this race.
      */
     private static void createVehicles(Race race) {
+
     }
 
     /**
@@ -23,5 +24,7 @@ public class Main {
 
         race.simulateRace();
         race.printRaceResults();
+
+
     }
 }
