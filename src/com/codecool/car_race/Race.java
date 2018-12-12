@@ -1,6 +1,6 @@
 package com.codecool.car_race;
 
-import java.util.Random;
+import java.util.*;
 
 
 public class Race {
@@ -10,23 +10,22 @@ public class Race {
     }
 
     public  void  printRaceResults(){
-        if(setRaining()){
+        if(isRaining()){
             System.err.println("It's raining!");
         }
         else{
-            System.out.println("THe weather is clear");
+            System.out.println("The weather is clear");
         }
 
     }
 
-    private boolean setRaining(){
-        boolean rain = false;
+    private int setRaining(){
         Random rand = new Random();
         int n = rand.nextInt(100) + 1;
-        if (n<=30){
-            rain = true;
-        }
-        return rain;
+        return n;
+    }
+    private boolean isRaining(){
+        return (setRaining()<=30);
     }
 
 }
