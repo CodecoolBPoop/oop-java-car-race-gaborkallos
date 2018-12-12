@@ -10,7 +10,12 @@ public class Race {
     }
 
     public  void  printRaceResults(){
-
+        if(setRaining()){
+            System.err.println("It's raining!");
+        }
+        else{
+            System.out.println("THe weather is clear");
+        }
 
     }
 
